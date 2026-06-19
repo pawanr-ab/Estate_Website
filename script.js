@@ -60,3 +60,24 @@ abtcards.addEventListener("mouseenter",()=>{
 abtcards.addEventListener("mouseleave",()=>{
     apause=false
 })
+
+
+let humber=document.querySelector(".hambur")
+
+humber.addEventListener("click",()=>{
+    hamnav.style.display="flex"
+})
+
+
+let hamnava=document.querySelectorAll(".hamnav ul li a")
+let hamnav=document.querySelector(".hamnav")
+
+
+hamnava.forEach(hama => {
+    hama.addEventListener("click",()=>{
+        hamnav.style.display="none"
+        hamnav.style.transition="ease in out"
+    })
+});
+
+
